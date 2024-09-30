@@ -1,7 +1,7 @@
 #Build with poetry an sum new version
 #merm_orquestrador-0.1.0-py3-none-any --> merm_orquestrador-0.1.1-py3-none-any na pasta dist
 #build and sum version number in ./dist/version.txt
-lambda_name="myNumberFunction"
+lambda_name="cledImports"
 packege_name=""
 
 rm -rf $lambda_name

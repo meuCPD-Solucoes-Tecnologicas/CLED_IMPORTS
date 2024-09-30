@@ -7,8 +7,8 @@ import jsons
 from mangum import Mangum
 
 from types_inputs import *
-from myNumberFunction.starlette.middleware.cors import CORSMiddleware
-from myNumberFunction.starlette.responses import JSONResponse
+from cledImports.starlette.middleware.cors import CORSMiddleware
+from cledImports.starlette.responses import JSONResponse
 
 app = FastAPI(title="My Number Function", description="This is a simple API to perform some math operations")
 app.add_middleware(
