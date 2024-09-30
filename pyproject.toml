@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "munumberapi"
+version = "0.1.0"
+description = ""
+authors = ["Leonardo Bezerra <leosoares.bezerra2017@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+jsons = "^1.6.3"
+fastapi = "^0.109.2"
+mangum = "^0.17.0"
+g4f = "^0.2.1.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
