@@ -199,3 +199,5 @@ async def add_process_time_header(request, call_next):
 def read_root():
     return {"Hello": "World"}
 
+openapi_schema = app.openapi()
+handler = Mangum(app)
