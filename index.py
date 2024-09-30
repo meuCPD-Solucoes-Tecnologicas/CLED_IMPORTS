@@ -8,7 +8,7 @@ from typing import Union
 from fastapi import FastAPI, HTTPException, Request
 
 from mangum import Mangum
-import requests
+
 
 #imports necessarios para a funcao query_appsync
 from botocore.auth import SigV4Auth
@@ -17,6 +17,7 @@ from botocore.awsrequest import AWSRequest
 import botocore.session
 import botocore
 import boto3
+
 
 
 from botocore.exceptions import ClientError
