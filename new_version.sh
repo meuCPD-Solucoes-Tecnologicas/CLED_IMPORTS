@@ -23,8 +23,6 @@ poetry build
 rm ./dist/$packege_name-0.1.0-py3-none-any.whl
 rm ./dist/$packege_name-0.1.0.tar.gz
 
-
-
 #generate requirements.txt
 poetry export --without-hashes -f requirements.txt > requirements.txt
 mv requirements.txt $lambda_name
@@ -35,7 +33,14 @@ pip install --upgrade --target . -r requirements.txt
 cp ../index.py .
 cp ../types_inputs.py .
 cp ../test.py .
-cp -r ../$packege_name .
+cp ../querys.py .
+
+#IF HAVE PACKEGE_NAME
+if [ -n "$packege_name" ]; then
+    cp -r ../$packege_name .
+fi
+
+
 ##########################################
 
 #zip all files compression 9
