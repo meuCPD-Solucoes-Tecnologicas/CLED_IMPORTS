@@ -195,3 +195,7 @@ async def add_process_time_header(request, call_next):
     response = await call_next(request)
     return response
 
+@app.get("/")
+def read_root():
+    return {"Hello": "World"}
+
