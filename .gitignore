@@ -2,3 +2,4 @@
 cledImports/**/*.*
 cledImports.zip
 cledImports/cledImports/Makefile
+cledImports/bin/fastapi
